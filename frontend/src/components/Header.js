@@ -4,15 +4,9 @@ function Header() {
     return (
         <header>
             <nav>
-                <Link className='link' to='/'>
-                    <div>HOME</div>
-                </Link>
-                <Link className='link' to='/about'>
-                    <div>ABOUT</div>
-                </Link>
-                <Link className='link' to='/projects'>
-                    <div>PROJECTS</div>
-                </Link>
+                <Link className='link' to='/'>HOME</Link>
+                <Link className='link' to='/about'>ABOUT</Link>
+                <Link className='link' to='/projects'>PROJECTS</Link>
             </nav>
         </header>
     );
