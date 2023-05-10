@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import './styles/index.css';
+import './styles/main.css';
 import './styles/fonts.css';
 
 function App() {
