@@ -4,9 +4,14 @@ function Header() {
     return (
         <header>
             <nav>
-                <Link className='link' to='/'>HOME</Link>
-                <Link className='link' to='/about'>ABOUT</Link>
-                <Link className='link' to='/projects'>PROJECTS</Link>
+                <div>
+                    <Link className='link' to='/'>ALLISON WOLTER</Link>
+                </div>
+                <div>
+                    <Link className='link' to='/about'>ABOUT</Link>
+                    <Link className='link' to='/projects'>PROJECTS</Link>
+                    <Link className='link' to='/contact'>CONTACT</Link>
+                </div>
             </nav>
         </header>
     );
