@@ -14,23 +14,38 @@ nav {
   display: flex;
   font-family: 'Montserrat', sans-serif;
   justify-content: space-between;
-  padding: 1.2vh;
+  padding: 1.5vh;
   position: fixed;
   width: 100vw;
+  z-index: 1;
 }
 
-.link {
+.header-name {
   color: rgb(53, 72, 84);
   cursor: pointer;
   font-size: 1.4em;
   font-weight: 400;
-  padding: 0 30px;
   text-decoration: none;
+  padding: 5px 10px;
 }
 
-.home-outer-div {
+.link {
+  border: 2px solid rgb(53, 72, 84);
+  border-radius: 5%;
+  color: rgb(53, 72, 84);
+  cursor: pointer;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0px 15px;
+  padding: 5px 10px;
+  text-decoration: none;
+  
+}
+
+.home-div {
   align-items: center;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   height: 100vh;
 }
@@ -38,8 +53,9 @@ nav {
 .home-left-inner-div {
   display: flex;
   align-items: center;
-  margin-right: 50px;
-  height: 100vh;
+  margin-right: 5%;
+  height: 100%;
+  max-width: 100%;
 }
 
 .home-right-inner-div {
@@ -47,14 +63,14 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
-  height: 100vh;
+  margin-left: 5%;
 }
 
 #headshot {
   border: 4px solid rgb(233, 163, 153);
   border-radius: 50%;
-  max-height: 400px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .home-name {
@@ -70,23 +86,15 @@ nav {
   font-weight: 300;
 }
 
-.resume-div {
-  margin-top: 5.5vh;
-}
-
-.view-resume,
-.download-resume {
-  background-color: rgb(53, 72, 84);
-  border-radius: 5%;
-  color: white;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  margin: 30px;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 20px;
+.about-div,
+.projects-div,
+.contact-div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .about-heading,
@@ -95,33 +103,21 @@ nav {
   font-family: 'Bebas Neue', cursive;
   font-size: 5em;
   font-weight: 500;
-  padding-top: 12vh;
-  text-align: center;
-}
-
-.about-div {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .about-name {
   font-family: 'Bebas Neue', cursive;
-  font-size: 3.5em;
+  font-size: 3.2em;
   font-weight: 500;
-  padding-top: 45px;
+  padding-top: 25px;
 }
 
 .about-bio {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   font-weight: 300;
-  padding-top: 50px;
+  padding-top: 35px;
   width: 80%;
-}
-
-.resume-div {
-  text-align: center;
 }
 
 .projects-outer-div {
@@ -131,8 +127,6 @@ nav {
   flex-wrap: wrap;
   grid-gap: 20px;
   justify-content: center;
-  padding-top: 4vh;
-  padding-bottom: 15vh;
 }
 
 .projects-inner-div {
@@ -140,6 +134,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 35px;
   min-height: 500px;
   min-width: 500px;
   padding: 25px;
@@ -169,14 +164,6 @@ button {
   font-weight: 400;
   margin: 0 25px;
   padding: 10px 20px;
-}
-
-.contact-outer-div {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 50vh;
-  justify-content: center;
 }
 
 .contact-inner-div {
@@ -211,7 +198,133 @@ a {
 footer {
   background-color: rgb(233, 163, 153);
   bottom: 0;
-  padding: 3vh;
+  padding: 1.2vh;
   position: fixed;
   width: 100%;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: end;
+}
+
+.view-resume,
+.download-resume {
+  border: 2px solid rgb(53, 72, 84);
+  border-radius: 5%;
+  color: rgb(53, 72, 84);
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0 15px;
+  padding: 5px 10px;
+}
+
+/* @media only screen and (max-width: 600px) {
+  nav {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .link {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  .header-name,
+  .link {
+    font-size: 1.2em;
+    padding: 5px;
+  }
+
+  .home-left-inner-div {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .home-right-inner-div {
+    margin-left: 0;
+  }
+
+  #headshot {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .home-name {
+    font-size: 4em;
+    margin-top: 20px;
+  }
+
+  .home-title {
+    font-size: 2.5em;
+  }
+
+  .about-name {
+    font-size: 2.5em;
+    padding-top: 15px;
+  }
+
+  .about-bio {
+    font-size: 1.2em;
+    padding-top: 25px;
+    width: 90%;
+  }
+
+  .projects-inner-div {
+    min-height: 400px;
+    min-width: 400px;
+    padding: 15px;
+  }
+
+  .projects-name {
+    font-size: 3em;
+  }
+
+  #projects-image {
+    margin: 10px 0 20px 0;
+    max-height: 250px;
+  }
+
+  button {
+    font-size: 1.2em;
+    margin: 0 10px;
+    padding: 8px 15px;
+  }
+
+  .contact-inner-div {
+    flex-direction: column;
+  }
+
+  .contact-name {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+
+  .contact-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-size: 1em;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .view-resume,
+  .download-resume {
+    font-size: 1.2em;
+    padding: 8px 15px;
+  }
 }

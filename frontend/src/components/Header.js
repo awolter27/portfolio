@@ -5,7 +5,7 @@ function Header() {
         <header>
             <nav>
                 <div>
-                    <Link className='link' to='/'>ALLISON WOLTER</Link>
+                    <Link className='header-name' to='/'>ALLISON WOLTER</Link>
                 </div>
                 <div>
                     <Link className='link' to='/about'>ABOUT</Link>

@@ -1,8 +1,8 @@
 function Contact({ contact }) {
     return (
         <>
-            <h1 className='contact-heading'>CONTACT</h1>
-            <div className='contact-outer-div'>
+            <div className='contact-div'>
+                <h1 className='contact-heading'>CONTACT</h1>
                 <div>
                     <div className='contact-inner-div'>
                         <img className='contact-image' src='https://i.imgur.com/jr58ilc.png' alt='Email Logo' />
