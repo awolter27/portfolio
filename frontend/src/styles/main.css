@@ -721,7 +721,7 @@ a {
 }
 
 /* Medium Phones */
-@media screen and (max-width: 375px) and (min-width: 321px) {
+@media screen and (max-width: 376px) and (min-width: 321px) {
   nav {
     padding: 1vh;
   }
@@ -880,7 +880,7 @@ a {
 }
 
 /* Small Phones */
-@media screen and (max-width: 321px) and (min-width: 319px) {
+@media screen and (max-width: 320px) and (min-width: 319px) {
   nav {
     padding: 1vh;
   }
@@ -938,8 +938,8 @@ a {
   }
 
   .about-div {
-    padding-bottom: 120vh;
-    padding-top: 20vh;
+    padding-bottom: 10vh;
+    padding-top: 120vh;
   }
 
   .about-name {
@@ -1039,7 +1039,6 @@ a {
 }
 
 /* Extra Small Phones */
-
 @media screen and (max-width: 318px) {
   nav {
     padding: 1vh;
