@@ -284,7 +284,6 @@ a {
 @media screen and (max-width: 1599px) and (min-width: 1200px) {
   nav {
     padding: 1.5vh;
-    position: relative;
   }
 
   .header-name {
@@ -342,6 +341,7 @@ a {
   .projects-div,
   .contact-div {
     padding-bottom: 10vh;
+    padding-top: 5vh;
   }
 
   .about-name {
@@ -474,7 +474,7 @@ a {
   .projects-div,
   .contact-div {
     padding-bottom: 25vh;
-    padding-top: 35vh;
+    padding-top: 27vh;
   }
 
   .about-heading,
@@ -638,7 +638,7 @@ a {
 
   .projects-div {
     padding-bottom: 15vh;
-    padding-top: 25vh;
+    padding-top: 18vh;
   }
 
   .projects-outer-div {
@@ -797,7 +797,7 @@ a {
 
   .projects-div {
     padding-bottom: 15vh;
-    padding-top: 40vh;
+    padding-top: 35vh;
   }
 
   .projects-outer-div {
@@ -939,7 +939,7 @@ a {
 
   .about-div {
     padding-bottom: 10vh;
-    padding-top: 120vh;
+    padding-top: 10vh;
   }
 
   .about-name {
@@ -1098,7 +1098,7 @@ a {
 
   .about-div {
     padding-bottom: 20vh;
-    padding-top: 100vh;
+    padding-top: 20vh;
   }
 
   .about-name {
@@ -1114,8 +1114,8 @@ a {
   }
 
   .projects-div {
-    padding-bottom: 105vh;
-    padding-top: 105vh;
+    padding-bottom: 15vh;
+    padding-top: 25vh;
   }
 
   .projects-outer-div {
