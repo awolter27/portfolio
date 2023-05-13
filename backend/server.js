@@ -6,8 +6,9 @@ const express = require('express');
 const cors = require('cors');
 
 // JSON Files
-const projects = require('./projects.json');
 const about = require('./about.json');
+const projects = require('./projects.json');
+const contact = require('./contact.json');
 
 // App Object
 const app = express();
@@ -20,14 +21,19 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 });
 
+// About Route
+app.get('/about', (req, res) => {
+    res.json(about);
+});
+
 // Projects Route
 app.get('/projects', (req, res) => {
     res.json(projects);
 });
 
-// About Route
-app.get('/about', (req, res) => {
-    res.json(about);
+// Contact Route
+app.get('/contact', (req, res) => {
+    res.json(contact);
 });
 
 // Listen
