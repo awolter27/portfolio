@@ -36,12 +36,19 @@ nav {
 }
 
 .home-left-inner-div {
+  display: flex;
+  align-items: center;
   margin-right: 50px;
+  height: 100vh;
 }
 
 .home-right-inner-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-left: 50px;
-  text-align: center;
+  height: 100vh;
 }
 
 #headshot {
@@ -63,6 +70,25 @@ nav {
   font-weight: 300;
 }
 
+.resume-div {
+  margin-top: 5.5vh;
+}
+
+.view-resume,
+.download-resume {
+  background-color: rgb(53, 72, 84);
+  border-radius: 5%;
+  color: white;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
 .about-heading,
 .projects-heading,
 .contact-heading {
@@ -73,27 +99,29 @@ nav {
   text-align: center;
 }
 
-.about {
+.about-div {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  width: 100vw;
 }
 
-.name-about {
+.about-name {
   font-family: 'Bebas Neue', cursive;
-  font-size: 7em;
+  font-size: 3.5em;
   font-weight: 500;
+  padding-top: 45px;
 }
 
-.bio {
+.about-bio {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   font-weight: 300;
-  padding-top: 70px;
+  padding-top: 50px;
   width: 80%;
+}
+
+.resume-div {
+  text-align: center;
 }
 
 .projects-outer-div {
@@ -133,13 +161,14 @@ nav {
 
 button {
   background-color: rgb(53, 72, 84);
+  border-radius: 5%;
   color: white;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   margin: 0 25px;
-  padding: 5px;
+  padding: 10px 20px;
 }
 
 .contact-outer-div {
@@ -181,7 +210,6 @@ a {
 
 footer {
   background-color: rgb(233, 163, 153);
-  ;
   bottom: 0;
   padding: 3vh;
   position: fixed;
