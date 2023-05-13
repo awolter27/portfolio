@@ -1,23 +1,26 @@
 function Projects({ projects }) {
     return (
-        <div className='outer-div-projects'>
-            {projects.map((project, idx) => {
-                return (
-                    <div className='inner-div-projects' key={idx}>
-                        <h1 className='name-projects'>{project.name}</h1>
-                        <img id='image-projects' src={project.image} alt={project.name} />
-                        <div>
-                            <a href={project.git} rel="noreferrer" target='_blank'>
-                                <button>Github</button>
-                            </a>
-                            <a href={project.live} rel="noreferrer" target='_blank'>
-                                <button>Live Site</button>
-                            </a>
+        <>
+            <h1 className='projects-heading'>PROJECTS</h1>
+            <div className='projects-outer-div'>
+                {projects.map((project, idx) => {
+                    return (
+                        <div className='projects-inner-div' key={idx}>
+                            <h1 className='projects-name'>{project.name}</h1>
+                            <img id='projects-image' src={project.image} alt={project.name} />
+                            <div>
+                                <a href={project.live} rel="noreferrer" target='_blank'>
+                                    <button>Website</button>
+                                </a>
+                                <a href={project.git} rel="noreferrer" target='_blank'>
+                                    <button>GitHub</button>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                );
-            })}
-        </div>
+                    );
+                })}
+            </div>
+        </>
     );
 }
 

@@ -38,7 +38,7 @@ function App() {
     };
     fetchProjects();
   }, []);
-  
+
   useEffect(() => {
     const fetchContact = async () => {
       try {
