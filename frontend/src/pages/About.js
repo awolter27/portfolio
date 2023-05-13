@@ -1,8 +1,11 @@
+import Typed from 'typed.js';
+
 function About({ about }) {
+    Typed()
+
     return (
         <div className='about'>
-            <h2 className='name-about'>{about.name}</h2>
-            <h3 className='email'>{about.email}</h3>
+            <h2 className='name-about'>{about.intro}</h2>
             <p className='bio'>{about.bio}</p>
         </div>
     );
